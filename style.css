@@ -1,0 +1,192 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #232931;
+    text-align: center;
+    padding: 20px;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    background-color: #dad9d9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+h1 {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form */
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+
+/* Category Selection (Full Buttons) */
+.category-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.category-btn {
+    width: 140px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.school {
+    background: #2B3595;
+    font-weight: 600;
+}
+
+.personal {
+    background: #7045AF;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.school:hover {
+    background: #3344da;
+}
+
+.personal:hover {
+    background: #8e54e5;
+}
+
+/* Add Button */
+#addTask {
+    width: 61%;
+    padding: 12px;
+    font-size: 16px;
+    background: #393E46;
+    font-weight: 600;
+    color: #EEEEEE;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#addTask:hover {
+    background: #202328;
+}
+
+/* To-Do List */
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push text to left, buttons to right */
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Text inside task */
+.task span {
+    flex: 1; /* Takes up all available space */
+    padding-right: 10px; /* Creates space between text and buttons */
+}
+
+/* Buttons container */
+.task button {
+    margin-left: 5px; /* Space between buttons */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Category Colors */
+.school-task {
+    border-left: 5px solid #2B3595;
+}
+
+.personal-task {
+    border-left: 5px solid #7045AF
+}
+
+/* Buttons */
+.complete {
+    background: #1E5128;
+}
+
+.edit {
+    background: #533483;
+}
+
+.delete {
+    background: #A21232;
+}
+
+/* Completed task style */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .category-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .category-btn {
+        width: 100%;
+    }
+
+    .task {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .task button {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
+}
