@@ -1,0 +1,228 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #232931;
+    padding: 10px;
+    text-align: center;
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    width: 550px;
+    max-height: 700px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #dad9d9;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+h2 {
+    font-weight: 600;
+    margin: 5px 0px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 10px 0px;
+    margin-top: 15px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.label {
+    margin-bottom: 10px;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    gap: 25px;
+}
+
+.category-btn {
+    width: 140px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.school {
+    background: #2B3595;
+    font-weight: 600;
+}
+
+.personal {
+    background: #7045AF;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.school:hover {
+    background: #3344da;
+}
+
+.personal:hover {
+    background: #8e54e5;
+}
+
+#addTask {
+    width: 61%;
+    padding: 12px;
+    font-size: 16px;
+    background: #393E46;
+    font-weight: 600;
+    color: #EEEEEE;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#addTask:hover {
+    background: #202328;
+}
+
+#taskList {
+    width: 94%;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.task span {
+    flex: 1;
+    padding-right: 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    display: block;
+    max-width: 100%;
+}
+
+.task button {
+    margin-left: 5px; 
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.school-task {
+    border-left: 5px solid #2B3595;
+}
+
+.personal-task {
+    border-left: 5px solid #7045AF
+}
+
+.complete {
+    background: #1E5128;
+}
+
+.edit {
+    background: #533483;
+}
+
+.delete {
+    background: #A21232;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .category-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .category-btn {
+        width: 100%;
+    }
+
+    .task {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .task button {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+}
+
+::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: #202328;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background-color: #EEEEEE;
+    width: 50px;
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 600px;
+    }
+}
